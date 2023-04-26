@@ -1,7 +1,5 @@
 package controller;
 
-//Veronique
-
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
