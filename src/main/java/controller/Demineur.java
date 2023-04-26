@@ -23,10 +23,10 @@ public class Demineur
   private JCheckBox pause = new JCheckBox("Pause");
   private JMenu help = new JMenu("?");
   private JMenuItem menuNouveau = new JMenuItem("Nouveau");
-  JCheckBoxMenuItem menuDebutant = new JCheckBoxMenuItem("DÃ©butant");
-  JCheckBoxMenuItem menuIntermediaire = new JCheckBoxMenuItem("IntermÃ©diaire");
+  JCheckBoxMenuItem menuDebutant = new JCheckBoxMenuItem("Débutant");
+  JCheckBoxMenuItem menuIntermediaire = new JCheckBoxMenuItem("Intermédiaire");
   JCheckBoxMenuItem menuExpert = new JCheckBoxMenuItem("Expert");
-  JCheckBoxMenuItem menuPerso = new JCheckBoxMenuItem("PersonalisÃ©");
+  JCheckBoxMenuItem menuPerso = new JCheckBoxMenuItem("Personalisé");
   private JMenuItem apropos = new JMenuItem("A propos");
   private BoxLayout layoutPanneauHaut = new BoxLayout(panneauHaut,
       BoxLayout.LINE_AXIS);
@@ -195,7 +195,7 @@ public class Demineur
     if (tailleX < 160) tailleX = 150; //taille minimum en largeur
 
     this.setSize(tailleX + 6, tailleY + 50 + 23 + 25); //6=largeur du cadre de la fenetre, 25=hauteur de la barre windows
-    this.setTitle("DÃ©mineur");
+    this.setTitle("Démineur");
     this.setResizable(false);
 
     //MENU
@@ -653,7 +653,7 @@ public class Demineur
       //un peu particulier : tout est gÃ©rÃ© par la fenetre de personalisation
       if (TYPE == 4) menuPerso.setSelected(true);
       else menuPerso.setSelected(false);
-      Personaliser perso = new Personaliser(this, "ParamÃ¨tres", true, HAUTEUR,
+      Personaliser perso = new Personaliser(this, "Paramètres", true, HAUTEUR,
                                             LARGEUR, nMines);
       perso.setLocation( (int)this.getLocation().getX() + 20,
                         (int)this.getLocation().getY() + 20);
@@ -670,7 +670,7 @@ public class Demineur
       }
     }
     else if (e.getSource() == apropos) {
-      Apropos app = new Apropos(this, "DÃ©mineur", true);
+      Apropos app = new Apropos(this, "Démineur", true);
       app.setLocation( (int)this.getLocation().getX() + 20,
                       (int)this.getLocation().getY() + 20);
       app.setVisible(true);
