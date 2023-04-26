@@ -23,6 +23,7 @@ public class Demineur
   private JCheckBox pause = new JCheckBox("Pause");
   private JMenu help = new JMenu("?");
   private JMenuItem menuNouveau = new JMenuItem("Nouveau");
+  private JMenuItem affichageEnModeJavaFX = new JMenuItem("Affichage en mode JavaFX");
   JCheckBoxMenuItem menuDebutant = new JCheckBoxMenuItem("Débutant");
   JCheckBoxMenuItem menuIntermediaire = new JCheckBoxMenuItem("Intermédiaire");
   JCheckBoxMenuItem menuExpert = new JCheckBoxMenuItem("Expert");
@@ -211,6 +212,7 @@ public class Demineur
     menuPerso.addActionListener(this);
     menuPerso.setMnemonic('P');
     partie.add(menuNouveau);
+    partie.add(affichageEnModeJavaFX);
     partie.add(new JSeparator());
     partie.add(menuDebutant);
     partie.add(menuIntermediaire);
