@@ -39,6 +39,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2OQWsiQml1VLapL5pxJsGBINGcn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -50,7 +51,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "U:/Etudes/2e annee/session 2/ValidationEtMaintenance/TP3/Demineur",
+    "last_opened_file_path": "U:/Etudes/2e annee/session 2/ValidationEtMaintenance/TP3/TP3_Validation",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -164,6 +165,7 @@
       <workItem from="1682525385858" duration="4289000" />
       <workItem from="1682534948010" duration="389000" />
       <workItem from="1682535641167" duration="3901000" />
+      <workItem from="1682539654335" duration="741000" />
     </task>
     <task id="LOCAL-00001" summary="Classes Primitives">
       <created>1681493853243</created>
