@@ -1,10 +1,6 @@
 package controller;
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> veronique
 import view.Demineur;
 
 import java.util.*;

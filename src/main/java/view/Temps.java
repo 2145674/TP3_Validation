@@ -1,8 +1,4 @@
 package view;
-<<<<<<< HEAD
-=======
-
->>>>>>> veronique
 
 public class Temps implements Runnable {
   Thread thread;
