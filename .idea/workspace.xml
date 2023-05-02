@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/Apropos.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/DeminCase.java" beforeDir="false" />
@@ -16,6 +17,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/Personaliser.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/Segment.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/Temps.java" beforeDir="false" />
+=======
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
