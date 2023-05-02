@@ -1,6 +1,8 @@
 package controller;
 
 
+import view.Demineur;
+
 import java.util.*;
 import javax.swing.*;
 
