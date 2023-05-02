@@ -1,5 +1,4 @@
-package controller;
-
+package view;
 
 public class Temps implements Runnable {
   Thread thread;

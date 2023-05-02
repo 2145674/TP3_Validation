@@ -1,5 +1,4 @@
-package controller;
-
+package view;
 
 import java.net.*;
 import java.awt.*;

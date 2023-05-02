@@ -1,4 +1,4 @@
-package controller;
+package view;
 
 import java.awt.image.*;
 import java.awt.*;

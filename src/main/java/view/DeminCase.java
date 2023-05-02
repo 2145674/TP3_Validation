@@ -1,4 +1,4 @@
-package controller;
+package view;
 
 //C'est une case de jeux en partie autonome
 //Elle g�re elle m�me certain ev�nements de la souris
