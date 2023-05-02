@@ -35,7 +35,7 @@ public class Demineur
   private Component box1;
   private Component box4;
 
-  private Icon cool, oups, boum, win; //images du bouton
+  private Icon sourire, oups, cool; //images du bouton
 
   int nDrapeau = 0; //nombres de drapeaux posÃ©s
   private int nMines; //nombre total de mines
@@ -64,23 +64,23 @@ public class Demineur
 
     //RÃ©cupÃ©rer les gif dans le fichier .jar
     URL location;
-    location = java.lang.ClassLoader.getSystemResource("Images/cool.gif");
-    cool = new ImageIcon(location);
+    location = java.lang.ClassLoader.getSystemResource("Images/sourire.gif");
+    sourire = new ImageIcon(location);
+    //location = java.lang.ClassLoader.getSystemResource("Images/oups.gif");
+    //oups = new ImageIcon(location);
     location = java.lang.ClassLoader.getSystemResource("Images/oups.gif");
     oups = new ImageIcon(location);
-    location = java.lang.ClassLoader.getSystemResource("Images/boum.gif");
-    boum = new ImageIcon(location);
-    location = java.lang.ClassLoader.getSystemResource("Images/win.gif");
-    win = new ImageIcon(location);
+    location = java.lang.ClassLoader.getSystemResource("Images/cool.gif");
+    cool = new ImageIcon(location);
 
-    //crÃ©ation des cases
+    //création des cases
     for (int i = 0; i < HAUTEUR; i++) {
       for (int j = 0; j < LARGEUR; j++) {
         jeux[i][j] = new DeminCase();
       }
     }
 
-    //sÃ©lÃ©ction du bon mode dans le JMenu
+    //sélection du bon mode dans le JMenu
     if (type == 1) menuDebutant.setSelected(true);
     if (type == 2) menuIntermediaire.setSelected(true);
     if (type == 3) menuExpert.setSelected(true);
@@ -103,7 +103,7 @@ public class Demineur
   //initialises le jeux
   public void nouveau() {
     temps.cancel(); //Timer Ã  0
-    boutonNouveau.setIcon(cool); //Icon par dÃ©faut du bouton
+    boutonNouveau.setIcon(sourire); //Icon par dÃ©faut du bouton
     nDrapeau = 0; //rÃ©initialisation des principaux paramÃ¨tres
     nCases = HAUTEUR * LARGEUR;
     affMines.setValeur(nMines);
@@ -111,9 +111,9 @@ public class Demineur
     panneauJeux.setVisible(true); //peut Ãªtre Ã  false en raison de la pause
     pause.setSelected(false);
 
-    //GÃ©nÃ©ration des mines
-    //dans la chaÃ®ne, 1=mine 0=rien
-    //on crÃ©Ã© le bon nombre de mines puis on complÃ¨te par des cases vides jusqu'Ã  obtenir le nombre de cases total
+    //Génération des mines
+    //dans la chaine, 1=mine 0=rien
+    //on créer le bon nombre de mines puis on complète par des cases vides jusqu'à obtenir le nombre de cases total
     mines = "";
     for (int i = 0; i < nMines; i++) mines = mines + "1";
     while (mines.length() < HAUTEUR * LARGEUR) {
@@ -245,7 +245,7 @@ public class Demineur
     affTemps.setValeur(0);
     boutonNouveau.setPreferredSize(new Dimension(25, 25));
     boutonNouveau.setFocusPainted(false);
-    boutonNouveau.setIcon(cool);
+    boutonNouveau.setIcon(sourire);
     boutonNouveau.setMargin(new Insets(0, 0, 0, 0));
     boutonNouveau.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(ActionEvent e) {
@@ -423,7 +423,7 @@ public class Demineur
       int y = (int) ( (JPanel) e.getSource()).getLocation().getY() + e.getY() +
           22;
       int[] coord = caseClic(x, y); //on rÃ©cupÃ¨re les coordonnÃ©es
-      boutonNouveau.setIcon(cool); //remise du bouton sur l'icone cool
+      boutonNouveau.setIcon(sourire); //remise du bouton sur l'icone sourire
       if (coord[0] != -1 && coord[1] != -1) { //si on est au dessus d'une case
         y = coord[1];
         x = coord[0];
@@ -528,7 +528,7 @@ public class Demineur
              jeux[y][x].isMine()) {
       temps.cancel(); //fin du timer
       jeux[y][x].setEtat(4); //boum
-      boutonNouveau.setIcon(boum);
+      boutonNouveau.setIcon(oups);
       for (int i = 0; i < HAUTEUR; i++) {
         for (int j = 0; j < LARGEUR; j++) {
           jeux[i][j].removeMouseListener(this); //on bloque les cases
@@ -552,7 +552,7 @@ public class Demineur
     if (nCases == nMines && !jeux[0][0].isBlocked()) {
       temps.cancel(); //fin du timer
       affMines.setValeur(0);
-      boutonNouveau.setIcon(win);
+      boutonNouveau.setIcon(cool);
       for (int i = 0; i < HAUTEUR; i++) {
         for (int j = 0; j < LARGEUR; j++) {
           jeux[i][j].removeMouseListener(this); //on bloque les cases
