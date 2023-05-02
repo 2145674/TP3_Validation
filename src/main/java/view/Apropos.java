@@ -1,14 +1,15 @@
 package view;
 
-//Test
-
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.border.*;
 
-
+/**
+ * À partir du bouton ?, une fenêtre s'affiche et affiche le titre du jeu. Il serait possible d'y ajouter des renseignements sur le jeu.
+ * Le bouton fermer ferme cette fenètre.
+ */
 public class Apropos extends JDialog implements ActionListener {
   private JPanel panel = new JPanel();
   private GridBagLayout gridBagLayout = new GridBagLayout();
