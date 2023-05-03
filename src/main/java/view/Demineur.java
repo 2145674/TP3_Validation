@@ -303,7 +303,7 @@ public class Demineur
       int y = (int) ( (JPanel) e.getSource()).getLocation().getY() + e.getY() +
           22;
       int[] coord = caseClic(x, y); //coordonnÃ©es de la case enfoncÃ©e enregistrÃ©es dans coord
-      boutonNouveau.setIcon(oups); //bouton
+      //boutonNouveau.setIcon(oups); //bouton
 
       //si clic droit au dessus d'une case
       if (e.getButton() == e.BUTTON3 && coord[1] != -1 && coord[0] != -1) {
