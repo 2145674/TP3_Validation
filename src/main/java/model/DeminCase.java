@@ -1,5 +1,7 @@
 package model;
 
+import view.Graphisme;
+
 import java.awt.*;
 import javax.swing.*;
 import javax.swing.border.*;
@@ -14,9 +16,7 @@ import java.awt.event.MouseListener;
  */
 
 
-public class DeminCase
-        extends JPanel
-        implements MouseListener {
+public class DeminCase {
 
     private int etat = 0; //0 = rien; 1==enfonc�e; 2=drapeau; 3=?; 4=boum; 5=mine; 6=erreur de drapeau
     private boolean mine = false; //Si il y a une mine
@@ -24,7 +24,12 @@ public class DeminCase
     private boolean blocked = false; //bloqu�e
     private int chiffre = 0; //chiffre affich� s'il doit �tre affich�
 
+<<<<<<< HEAD
     private Graphisme gr = null; //l'objet qui contient les graphismes. Il est indiqu� par setGraphisme(Graphisme)
+=======
+<<<<<<< Updated upstream
+private Graphisme gr = null; //l'objet qui contient les graphismes. Il est indiqu� par setGraphisme(Graphisme)
+>>>>>>> tania
 
     public DeminCase() {
         try {
@@ -76,7 +81,17 @@ public class DeminCase
 
     public boolean isMine() {
         return mine;
+<<<<<<< HEAD
     }
+=======
+        }
+=======
+    private view.Graphisme gr = null; //l'objet qui contient les graphismes. Il est indiqu� par setGraphisme(Graphisme)
+
+    public DeminCase() {
+    }
+>>>>>>> Stashed changes
+>>>>>>> tania
 
     public int getEtat() {
         return etat;
@@ -86,11 +101,47 @@ public class DeminCase
         this.etat = etat;
     }
 
+<<<<<<< HEAD
     public void setMine(boolean mine) {
+=======
+<<<<<<< Updated upstream
+public void setMine(boolean mine) {
+=======
+    public boolean isMine() {
+        return mine;
+    }
+
+    public void setMine(boolean mine) {
+>>>>>>> Stashed changes
+>>>>>>> tania
         this.mine = mine;
     }
 
+<<<<<<< HEAD
     public int getChiffre() {
+=======
+<<<<<<< Updated upstream
+public int getChiffre() {
+=======
+    public boolean isSelected() {
+        return selected;
+    }
+
+    public void setSelected(boolean selected) {
+        this.selected = selected;
+    }
+
+    public boolean isBlocked() {
+        return blocked;
+    }
+
+    public void setBlocked(boolean blocked) {
+        this.blocked = blocked;
+    }
+
+    public int getChiffre() {
+>>>>>>> Stashed changes
+>>>>>>> tania
         return chiffre;
     }
 
@@ -98,7 +149,12 @@ public class DeminCase
         this.chiffre = chiffre;
     }
 
+<<<<<<< HEAD
     public boolean isSelected() {
+=======
+<<<<<<< Updated upstream
+public boolean isSelected() {
+>>>>>>> tania
         return selected;
     }
 
@@ -159,5 +215,23 @@ public class DeminCase
         setMine(false);
         setBlocked(false);
         //repaint();
+<<<<<<< HEAD
     }
 }
+=======
+        }
+        }
+=======
+    public Graphisme getGr() {
+        return gr;
+    }
+
+    public void setGr(Graphisme gr) {
+        this.gr = gr;
+    }
+}
+
+
+//integrating javafx to a swing component sur le site oracle
+>>>>>>> Stashed changes
+>>>>>>> tania

@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="426459d7-e390-4df3-b5ae-dd3ff14ad7af" name="Changes" comment="Classes Primitives">
+    <list default="true" id="426459d7-e390-4df3-b5ae-dd3ff14ad7af" name="Changes" comment="Classes Primitives de Test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Apropos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/DeminCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/DeminCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Demineur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Demineur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Personaliser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Personaliser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/DeminCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/DeminCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/Demineur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Demineur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/DemineurJavaFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/DemineurJavaFX.java" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +26,8 @@
       <list>
         <option value="CSS File" />
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -43,25 +50,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "U:/Validation et maintenance/TP3/TP3/Demineur",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+<<<<<<< Updated upstream
+    &quot;last_opened_file_path&quot;: &quot;U:/Etudes/2e annee/session 2/ValidationEtMaintenance/TP3/TP3_Validation&quot;,
+=======
+    &quot;last_opened_file_path&quot;: &quot;U:/Validation et maintenance/TP3/TP3/Demineur&quot;,
+>>>>>>> Stashed changes
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -81,7 +92,7 @@
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="controller.Main" />
-      <module name="TP3_Validation" />
+      <module name="calculatrice" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="controller.*" />
@@ -166,7 +177,7 @@
       <workItem from="1682534948010" duration="389000" />
       <workItem from="1682535641167" duration="3901000" />
       <workItem from="1682539654335" duration="2550000" />
-      <workItem from="1683136073998" duration="8025000" />
+      <workItem from="1683136736445" duration="1944000" />
     </task>
     <task id="LOCAL-00001" summary="Classes Primitives">
       <created>1681493853243</created>
@@ -204,17 +215,19 @@
     <MESSAGE value="Classes Primitives de Test" />
     <option name="LAST_COMMIT_MESSAGE" value="Classes Primitives de Test" />
   </component>
+<<<<<<< Updated upstream
+=======
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/view/Demineur.java</url>
-          <line>661</line>
+          <line>653</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/view/Demineur.java</url>
-          <line>634</line>
+          <line>629</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
@@ -224,6 +237,7 @@
       </breakpoints>
     </breakpoint-manager>
   </component>
+>>>>>>> Stashed changes
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TP2_Monoposte$FactureAvecDonsTest.ic" NAME="FactureAvecDonsTest Coverage Results" MODIFIED="1682528893686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.example.model.*</FILTER>
