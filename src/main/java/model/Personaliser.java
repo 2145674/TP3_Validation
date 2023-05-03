@@ -1,5 +1,7 @@
 package model;
 
+import view.Demineur;
+
 import java.awt.*;
 import javax.swing.*;
 import javax.swing.border.*;
@@ -21,14 +23,14 @@ public class Personaliser extends JDialog implements ActionListener {
     private JButton cancel = new JButton();
 
     int H, L, M;
-    Demineur demin;
+    view.Demineur demin;
 
     public Personaliser(Frame frame, String title, boolean modal, int hauteur, int largeur, int mines) {
         super(frame, title, modal);
         H=hauteur;
         L=largeur;
         M=mines;
-        demin=(Demineur) frame;
+        demin=(view.Demineur) frame;
         try {
             jbInit();
             pack();//ajuste la dimension de la fenetre automatiquement
@@ -116,7 +118,7 @@ public class Personaliser extends JDialog implements ActionListener {
                 if (nMines>nL*nH) nMines=nL*nH;
                 demin.dispose();// on détruit le démineur en cours
                 System.gc();
-                Demineur demineur = new Demineur(nH,nL,nMines,4);//on créé le nouveau
+                view.Demineur demineur = new Demineur(nH,nL,nMines,4);//on créé le nouveau
             }
             catch (Exception exc) {//retournée par parseInt(String)
                 this.setTitle("Valeurs incorrectes");

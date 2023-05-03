@@ -6,6 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="426459d7-e390-4df3-b5ae-dd3ff14ad7af" name="Changes" comment="Classes Primitives de Test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Apropos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/DeminCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/DeminCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Demineur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Demineur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Personaliser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Personaliser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/DeminCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/DeminCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/Demineur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Demineur.java" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +57,11 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+<<<<<<< Updated upstream
     &quot;last_opened_file_path&quot;: &quot;U:/Etudes/2e annee/session 2/ValidationEtMaintenance/TP3/TP3_Validation&quot;,
+=======
+    &quot;last_opened_file_path&quot;: &quot;U:/Validation et maintenance/TP3/TP3/Demineur&quot;,
+>>>>>>> Stashed changes
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -202,6 +215,29 @@
     <MESSAGE value="Classes Primitives de Test" />
     <option name="LAST_COMMIT_MESSAGE" value="Classes Primitives de Test" />
   </component>
+<<<<<<< Updated upstream
+=======
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/view/Demineur.java</url>
+          <line>653</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/view/Demineur.java</url>
+          <line>629</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+>>>>>>> Stashed changes
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TP2_Monoposte$FactureAvecDonsTest.ic" NAME="FactureAvecDonsTest Coverage Results" MODIFIED="1682528893686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.example.model.*</FILTER>
