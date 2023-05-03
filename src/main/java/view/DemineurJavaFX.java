@@ -7,8 +7,14 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class DemineurJavaFX extends Application {
+    //Stage stage = new Stage();
 
     public DemineurJavaFX() {
+//        try {
+//            start(new Stage());
+//        } catch (Exception e) {
+//            throw new RuntimeException(e);
+//        }
     }
 
     @Override

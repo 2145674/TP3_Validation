@@ -635,13 +635,14 @@ public class Demineur
       menuAffichageEnModeJavaFX.setSelected(true);
       this.dispose(); // on détruit la fenetre
       System.gc();
-      DemineurJavaFX demineurJavaFX = new DemineurJavaFX();
-      Stage stage = new Stage();
-      try {
-        demineurJavaFX.start(stage);
-      } catch (Exception ex) {
-        throw new RuntimeException(ex);
-      }
+
+      //Stage stage = new Stage();
+      //DemineurJavaFX demineurJavaFX = new DemineurJavaFX();
+//      try {
+//        demineurJavaFX.start(stage);
+//      } catch (Exception ex) {
+//        throw new RuntimeException(ex);
+//      }
 
     }
     else if (e.getSource() == menuDebutant && TYPE != 1) {
