@@ -23,75 +23,10 @@ public class DeminCase {
     private boolean selected = false; //case enfonc�e
     private boolean blocked = false; //bloqu�e
     private int chiffre = 0; //chiffre affich� s'il doit �tre affich�
-
-<<<<<<< HEAD
-    private Graphisme gr = null; //l'objet qui contient les graphismes. Il est indiqu� par setGraphisme(Graphisme)
-=======
-<<<<<<< Updated upstream
-private Graphisme gr = null; //l'objet qui contient les graphismes. Il est indiqu� par setGraphisme(Graphisme)
->>>>>>> tania
-
-    public DeminCase() {
-        try {
-            //construction de la case
-            jbInit();
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-    }
-
-    private void jbInit() throws Exception {
-        this.setBackground(Graphisme.dessus);
-        this.setMaximumSize(new Dimension(16, 16)); //On impose la taille
-        this.setMinimumSize(new Dimension(16, 16));
-        this.addMouseListener(this);
-        this.setPreferredSize(new Dimension(16, 16));
-    }
-
-    public void mouseClicked(MouseEvent e) {
-    }
-
-    public void mousePressed(MouseEvent e) {
-        //Selectionne la case si on clique dessus
-        if (e.getModifiers() == 16 && etat != 1 && etat != 2 && !blocked) {
-            selected = true;
-            repaint();
-        }
-    }
-
-    public void mouseReleased(MouseEvent e) {
-        //Déselctionne la cases
-        selected = false;
-        repaint();
-    }
-
-    public void mouseEntered(MouseEvent e) {
-        //Si la case est relevée est que la souris passe dessus avec le clic gauche, on sélectionne
-        if (e.getModifiers() == 16 && etat != 1 && etat != 2 && !blocked) {
-            selected = true;
-            repaint();
-        }
-    }
-
-    public void mouseExited(MouseEvent e) {
-        //pas fin mais efficace
-        selected = false;
-        repaint();
-    }
-
-    public boolean isMine() {
-        return mine;
-<<<<<<< HEAD
-    }
-=======
-        }
-=======
     private view.Graphisme gr = null; //l'objet qui contient les graphismes. Il est indiqu� par setGraphisme(Graphisme)
 
     public DeminCase() {
     }
->>>>>>> Stashed changes
->>>>>>> tania
 
     public int getEtat() {
         return etat;
@@ -101,28 +36,14 @@ private Graphisme gr = null; //l'objet qui contient les graphismes. Il est indiq
         this.etat = etat;
     }
 
-<<<<<<< HEAD
-    public void setMine(boolean mine) {
-=======
-<<<<<<< Updated upstream
-public void setMine(boolean mine) {
-=======
     public boolean isMine() {
         return mine;
     }
 
     public void setMine(boolean mine) {
->>>>>>> Stashed changes
->>>>>>> tania
         this.mine = mine;
     }
 
-<<<<<<< HEAD
-    public int getChiffre() {
-=======
-<<<<<<< Updated upstream
-public int getChiffre() {
-=======
     public boolean isSelected() {
         return selected;
     }
@@ -140,8 +61,6 @@ public int getChiffre() {
     }
 
     public int getChiffre() {
->>>>>>> Stashed changes
->>>>>>> tania
         return chiffre;
     }
 
@@ -149,79 +68,6 @@ public int getChiffre() {
         this.chiffre = chiffre;
     }
 
-<<<<<<< HEAD
-    public boolean isSelected() {
-=======
-<<<<<<< Updated upstream
-public boolean isSelected() {
->>>>>>> tania
-        return selected;
-    }
-
-    public void setSelected(boolean selected) {
-        this.selected = selected;
-        this.paintComponent(this.getGraphics());
-    }
-
-    public void paintComponent(Graphics g/*ra*/) {
-        super.paintComponent(g/*ra*/);
-    /*Graphics2D g = (Graphics2D) gra;
-    g.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
-                       RenderingHints.VALUE_ANTIALIAS_ON);
-    g.setStroke(new BasicStroke(1.5f));*/
-        if (gr != null) {
-            if (!selected) { //case non enfonc�e
-                if (etat == 0) { //normal
-                    g.setColor(Color.white); //bordure haut et gauche blanche
-                    g.drawLine(0, 0, 0, 15);
-                    g.drawLine(0, 0, 15, 0);
-                } else if (etat == 1) g.drawImage(gr.chiffre[chiffre], 0, 0, null); //chiffre ou blanc
-                else if (etat == 2) g.drawImage(gr.drapeau, 0, 0, null); //drapeau
-                else if (etat == 6) g.drawImage(gr.erreur, 0, 0, null); //erreur de drapeau
-                else if (etat == 3) g.drawImage(gr.question, 0, 0, null); //?
-                else if (etat == 4) g.drawImage(gr.boum, 0, 0, null); //mine sur fond rouge
-                else if (etat == 5) g.drawImage(gr.mine, 0, 0, null); //mine
-            } else { //case enfonc�e
-                if (etat == 3) g.drawImage(gr.questionSel, 0, 0, null); //?
-                else if (etat != 1) { //autre cas de case relev�e normalement, seul le cas etat==0 en raison des conditions du reste du programme
-                    g.setColor(Color.gray); //bordure haut et gauche grise
-                    g.drawLine(0, 0, 0, 15);
-                    g.drawLine(0, 0, 15, 0);
-                }
-            }
-        }
-        //g.setStroke(new BasicStroke(1.5f));
-        g.setColor(Color.darkGray); //bordure bas et droite
-        g.drawLine(0, 15, 15, 15);
-        g.drawLine(15, 0, 15, 15);
-        g.dispose();
-    }
-
-    public void setBlocked(boolean blocked) {
-        this.blocked = blocked;
-    }
-
-    public boolean isBlocked() {
-        return blocked;
-    }
-
-    public void setGraphisme(Graphisme gr) {
-        this.gr = gr;
-    }
-
-    public void reset() { //remise à zero des principaux paramètres
-        this.etat = 0;
-        this.selected = false;
-        setMine(false);
-        setBlocked(false);
-        //repaint();
-<<<<<<< HEAD
-    }
-}
-=======
-        }
-        }
-=======
     public Graphisme getGr() {
         return gr;
     }
@@ -233,5 +79,4 @@ public boolean isSelected() {
 
 
 //integrating javafx to a swing component sur le site oracle
->>>>>>> Stashed changes
->>>>>>> tania
+
