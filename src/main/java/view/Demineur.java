@@ -1,5 +1,7 @@
 package view;
 
+import javafx.stage.Stage;
+
 import java.net.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -22,7 +24,7 @@ public class Demineur
   private JCheckBox pause = new JCheckBox("Pause");
   private JMenu help = new JMenu("?");
   private JMenuItem menuNouveau = new JMenuItem("Nouveau");
-  private JMenuItem affichageEnModeJavaFX = new JMenuItem("Affichage en mode JavaFX");
+  private JMenuItem menuAffichageEnModeJavaFX = new JCheckBoxMenuItem("Affichage en mode JavaFX");
   JCheckBoxMenuItem menuDebutant = new JCheckBoxMenuItem("Débutant");
   JCheckBoxMenuItem menuIntermediaire = new JCheckBoxMenuItem("Intermédiaire");
   JCheckBoxMenuItem menuExpert = new JCheckBoxMenuItem("Expert");
@@ -202,6 +204,8 @@ public class Demineur
     partie.setMnemonic('P');
     menuNouveau.addActionListener(this);
     menuNouveau.setMnemonic('N');
+    menuAffichageEnModeJavaFX.addActionListener(this);
+    menuAffichageEnModeJavaFX.setMnemonic('J');
     menuDebutant.addActionListener(this);
     menuDebutant.setMnemonic('D');
     menuIntermediaire.addActionListener(this);
@@ -211,7 +215,7 @@ public class Demineur
     menuPerso.addActionListener(this);
     menuPerso.setMnemonic('P');
     partie.add(menuNouveau);
-    partie.add(affichageEnModeJavaFX);
+    partie.add(menuAffichageEnModeJavaFX);
     partie.add(new JSeparator());
     partie.add(menuDebutant);
     partie.add(menuIntermediaire);
@@ -627,9 +631,21 @@ public class Demineur
   //Ã©venements liÃ©s au menu
   public void actionPerformed(ActionEvent e) {
     if (e.getSource() == menuNouveau) nouveau();
-    else if (e.getSource() == menuDebutant && TYPE != 1) {
-      this.dispose(); // on dÃ©truit la fenetre
+    else if (e.getSource() == menuAffichageEnModeJavaFX){
+      menuAffichageEnModeJavaFX.setSelected(true);
+      this.dispose(); // on détruit la fenetre
       System.gc();
+      DemineurJavaFX demineurJavaFX = new DemineurJavaFX();
+      Stage stage = new Stage();
+      try {
+        demineurJavaFX.start(stage);
+      } catch (Exception ex) {
+        throw new RuntimeException(ex);
+      }
+
+    }
+    else if (e.getSource() == menuDebutant && TYPE != 1) {
+
       if (TYPE == 1) menuDebutant.setSelected(true);
       Demineur demineur = new Demineur(8, 8, 10, 1); //et on en refait une
     }
