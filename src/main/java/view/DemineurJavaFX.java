@@ -3,12 +3,10 @@ package view;
 import javafx.application.Platform;
 import javafx.embed.swing.JFXPanel;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Group;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
-import javafx.scene.text.Text;
+
+import javafx.scene.shape.Line;
 
 import javax.swing.*;
 import java.io.IOException;
@@ -19,6 +17,7 @@ public class DemineurJavaFX {
 
         JFrame frame = new JFrame("Swing and JavaFX");
         final JFXPanel jfxPanel = new JFXPanel();
+        Line line = new Line(100, 10, 10, 110);
         frame.add(jfxPanel);
         frame.setSize(400,300);
         frame.setVisible(true);
@@ -45,9 +44,7 @@ public class DemineurJavaFX {
     private static Scene createScene() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(DemineurJavaFX.class.getResource("/view/Expert.fxml"));
         Parent root  =  fxmlLoader.load();
-        Scene  scene  =  new  Scene(root);
-
-
+        Scene  scene  =  new  Scene(root, 600,400);
         return (scene);
     }
 
