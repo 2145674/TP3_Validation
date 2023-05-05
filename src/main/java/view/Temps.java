@@ -3,26 +3,26 @@ package view;
 public class Temps implements Runnable {
   Thread thread;
   Segment aff;
-  boolean marche=true;
-  boolean threadSuspended=false;
+
+  model.Temps temps = new model.Temps();
 
   public Temps(Segment compteur) {
     aff=compteur;
   }
   public void run() {
-    while (marche) {
+    while (temps.isMarche()) {
       try {
         thread.sleep(1000);
-        if (threadSuspended) {
+        if (temps.isThreadSuspended()) {
           synchronized(this) {
-            while (threadSuspended)
+            while (temps.isThreadSuspended())
               wait();
           }
         }
       }
       catch(java.lang.InterruptedException e) {}
-      int time = aff.getValeur();
-      if (marche && time<999) {//faire plus de 999s, c'est quand même beaucoup...
+      int time = aff.getSegment().getValeur();
+      if (temps.isMarche() && time<999) {//faire plus de 999s, c'est quand même beaucoup...
         aff.setValeur(time+1);
       }
 
@@ -37,13 +37,13 @@ public class Temps implements Runnable {
     if (thread!=null) thread = null;
   }
   public void cancel() {
-    marche=false;
+    temps.setMarche(false);
   }
   public void suspend() {
-    threadSuspended=true;
+    temps.setMarche(true);
   }
   public synchronized void resume() {
-    threadSuspended=false;
+    temps.setThreadSuspended(false);
     notify();
   }
 }

@@ -1,7 +1,5 @@
 package view;
 
-import javafx.stage.Stage;
-
 import java.net.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -10,35 +8,35 @@ import javax.swing.border.*;
 
 //le jeux...
 public class Demineur
-    extends JFrame
-    implements MouseListener, WindowListener, ActionListener {
-  private JPanel panneauHaut = new JPanel();
-  private JPanel panneauJeux = new JPanel();
-  private GridBagLayout layoutPanneauJeux = new GridBagLayout();
-  private Segment affMines = new Segment(); //l'afficheur du nombre de mines
-  private JButton boutonNouveau = new JButton();
-  private Segment affTemps = new Segment(); //l'afficheur du temps Ã©coulÃ©
-  private Border borderPanneaux;
-  private JMenuBar menu = new JMenuBar();
-  private JMenu partie = new JMenu("Partie");
-  private JCheckBox pause = new JCheckBox("Pause");
-  private JMenu help = new JMenu("?");
-  private JMenuItem menuNouveau = new JMenuItem("Nouveau");
-  private JMenuItem menuAffichageEnModeJavaFX = new JCheckBoxMenuItem("Affichage en mode JavaFX");
-  JCheckBoxMenuItem menuDebutant = new JCheckBoxMenuItem("Débutant");
-  JCheckBoxMenuItem menuIntermediaire = new JCheckBoxMenuItem("Intermédiaire");
-  JCheckBoxMenuItem menuExpert = new JCheckBoxMenuItem("Expert");
-  JCheckBoxMenuItem menuPerso = new JCheckBoxMenuItem("Personalisé");
-  private JMenuItem apropos = new JMenuItem("A propos");
-  private BoxLayout layoutPanneauHaut = new BoxLayout(panneauHaut,
-      BoxLayout.LINE_AXIS);
-  private Component box2; //Boxes utilisÃ©es dans le BoxLayout
-  private Component box3;
-  private Component box1;
-  private Component box4;
-  private Icon sourire, oups, cool; //images du bouton
-  private Temps temps = new Temps(affTemps); //timer sur l'affichage Segment affTemps
-  private model.Demineur demineur = new model.Demineur();
+        extends JFrame
+        implements MouseListener, WindowListener, ActionListener {
+    private JPanel panneauHaut = new JPanel();
+    private JPanel panneauJeux = new JPanel();
+    private GridBagLayout layoutPanneauJeux = new GridBagLayout();
+    private Segment affMines = new Segment(); //l'afficheur du nombre de mines
+    private JButton boutonNouveau = new JButton();
+    private Segment affTemps = new Segment(); //l'afficheur du temps Ã©coulÃ©
+    private Border borderPanneaux;
+    private JMenuBar menu = new JMenuBar();
+    private JMenu partie = new JMenu("Partie");
+    private JCheckBox pause = new JCheckBox("Pause");
+    private JMenu help = new JMenu("?");
+    private JMenuItem menuNouveau = new JMenuItem("Nouveau");
+    private JMenuItem menuAffichageEnModeJavaFX = new JCheckBoxMenuItem("Affichage en mode JavaFX");
+    JCheckBoxMenuItem menuDebutant = new JCheckBoxMenuItem("Débutant");
+    JCheckBoxMenuItem menuIntermediaire = new JCheckBoxMenuItem("Intermédiaire");
+    JCheckBoxMenuItem menuExpert = new JCheckBoxMenuItem("Expert");
+    JCheckBoxMenuItem menuPerso = new JCheckBoxMenuItem("Personalisé");
+    private JMenuItem apropos = new JMenuItem("A propos");
+    private BoxLayout layoutPanneauHaut = new BoxLayout(panneauHaut,
+            BoxLayout.LINE_AXIS);
+    private Component box2; //Boxes utilisÃ©es dans le BoxLayout
+    private Component box3;
+    private Component box1;
+    private Component box4;
+    private Icon sourire, oups, cool; //images du bouton
+    private Temps temps = new Temps(affTemps); //timer sur l'affichage Segment affTemps
+    private model.Demineur demineur = new model.Demineur();
 
     //constructeur en fonction du nombre de cases, de mines et du type.
     //Le type permet de selectionner le bon mode dans le menu.
@@ -304,13 +302,13 @@ public class Demineur
                 switch (temp) {
                     case 0: //affichage d'un drapeau
                         demineur.getJeux()[coord[1]][coord[0]].getDeminCase().setEtat(2);
-                        demineur.setnDrapeau(demineur.getnDrapeau()+1);
+                        demineur.setnDrapeau(demineur.getnDrapeau() + 1);
                         affMines.setValeur(demineur.getnMines() - demineur.getnDrapeau());
                         break;
                     case 2: //affichage d'un ?
                         demineur.getJeux()[coord[1]][coord[0]].getDeminCase().setEtat(3);
-                        demineur.setnDrapeau(demineur.getnDrapeau()+1);
-                        affMines.setValeur(demineur.getnMines() -  demineur.getnDrapeau());
+                        demineur.setnDrapeau(demineur.getnDrapeau() + 1);
+                        affMines.setValeur(demineur.getnMines() - demineur.getnDrapeau());
                         break;
                     case 3: //RAZ
                         demineur.getJeux()[coord[1]][coord[0]].getDeminCase().setEtat(0);
@@ -478,7 +476,7 @@ public class Demineur
         //Si la case est normale ou avec un ?
         if ((demineur.getJeux()[y][x].getDeminCase().getEtat() == 0 || demineur.getJeux()[y][x].getDeminCase().getEtat() == 3) &&
                 !demineur.getJeux()[y][x].getDeminCase().isMine()) {
-            demineur.setnCases(demineur.getnCases()-1); //nombre de cases non dÃ©couvertes
+            demineur.setnCases(demineur.getnCases() - 1); //nombre de cases non dÃ©couvertes
             demineur.getJeux()[y][x].getDeminCase().setEtat(1); //on indique que la case est dÃ©couverte
             if (demineur.getJeux()[y][x].getDeminCase().getChiffre() == 0) { // Si le nombre de mines autour est nul, on dÃ©couvre les cases autour
                 decouvrirPartiel1(x - 1, y - 1);
@@ -536,8 +534,9 @@ public class Demineur
             //on affiche les erreurs
             for (int i = 0; i < demineur.getHAUTEUR(); i++) {
                 for (int j = 0; j < demineur.getLARGEUR(); j++) {
-                    if (demineur.getJeux()[i][j].getDeminCase().getEtat() == 2 && !demineur.getJeux()[i][j].getDeminCase().isMine()) demineur.getJeux()[i][j].
-                            getDeminCase().setEtat(6);
+                    if (demineur.getJeux()[i][j].getDeminCase().getEtat() == 2 && !demineur.getJeux()[i][j].getDeminCase().isMine())
+                        demineur.getJeux()[i][j].
+                                getDeminCase().setEtat(6);
                 }
             }
         }
@@ -562,7 +561,7 @@ public class Demineur
         if (x >= 0 && y >= 0 && x < demineur.getLARGEUR() && y < demineur.getHAUTEUR()) {
             if (demineur.getJeux()[y][x].getDeminCase().getEtat() == 0 && demineur.getJeux()[y][x].getDeminCase().getChiffre() != 0) {
                 demineur.getJeux()[y][x].getDeminCase().setEtat(1);
-                demineur.setnCases(demineur.getnCases()-1);
+                demineur.setnCases(demineur.getnCases() - 1);
             }
             if (demineur.getJeux()[y][x].getDeminCase().getEtat() == 0 && demineur.getJeux()[y][x].getDeminCase().getChiffre() == 0)
                 decouvre(y, x); //Si le nombre de mines autour est nul, on dÃ©couvre les cases autour
@@ -629,13 +628,10 @@ public class Demineur
             this.dispose(); // on détruit la fenetre
             System.gc();
 
-            //Stage stage = new Stage();
-            //DemineurJavaFX demineurJavaFX = new DemineurJavaFX();
-//      try {
-//        demineurJavaFX.start(stage);
-//      } catch (Exception ex) {
-//        throw new RuntimeException(ex);
-//      }
+            DemineurJavaFX demineurJavaFX = new DemineurJavaFX();
+            demineurJavaFX.creationDuModeJavaFX();
+
+            //ici
 
         } else if (e.getSource() == menuDebutant && demineur.getTYPE() != 1) {
 

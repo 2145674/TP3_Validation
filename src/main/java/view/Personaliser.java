@@ -20,15 +20,14 @@ public class Personaliser extends JDialog implements ActionListener {
   private JButton ok = new JButton();
   private JButton cancel = new JButton();
 
-  int H, L, M;
-  Demineur demin;
+  model.Personaliser personaliser = new model.Personaliser();
 
   public Personaliser(Frame frame, String title, boolean modal, int hauteur, int largeur, int mines) {
     super(frame, title, modal);
-    H=hauteur;
-    L=largeur;
-    M=mines;
-    demin=(Demineur) frame;
+    personaliser.setH(hauteur);
+    personaliser.setL(largeur);
+    personaliser.setM(mines);
+    personaliser.setDemin((Demineur) frame);
     try {
       jbInit();
       pack();//ajuste la dimension de la fenetre automatiquement
@@ -60,15 +59,15 @@ public class Personaliser extends JDialog implements ActionListener {
     h.setBorder(border1);
     h.setMinimumSize(new Dimension(40, 21));
     h.setPreferredSize(new Dimension(40, 21));
-    h.setText(""+H);
+    h.setText(""+personaliser.getH());
     l.setBorder(border1);
     l.setMinimumSize(new Dimension(40, 21));
     l.setPreferredSize(new Dimension(40, 21));
-    l.setText(""+L);
+    l.setText(""+personaliser.getL());
     m.setBorder(border1);
     m.setMinimumSize(new Dimension(40, 21));
     m.setPreferredSize(new Dimension(40, 21));
-    m.setText(""+M);
+    m.setText(""+personaliser.getM());
     ok.setMaximumSize(new Dimension(70, 27));
     ok.setMinimumSize(new Dimension(70, 27));
     ok.setPreferredSize(new Dimension(70, 27));
@@ -114,7 +113,7 @@ public class Personaliser extends JDialog implements ActionListener {
         int nMines=Integer.parseInt(m.getText());
         if (nMines<0) nMines=0;
         if (nMines>nL*nH) nMines=nL*nH;
-        demin.dispose();// on détruit le démineur en cours
+        personaliser.getDemin().dispose();// on détruit le démineur en cours
         System.gc();
         Demineur demineur = new Demineur(nH,nL,nMines,4);//on créé le nouveau
       }
@@ -125,5 +124,13 @@ public class Personaliser extends JDialog implements ActionListener {
     if (e.getSource()==cancel) {
       this.setVisible(false);
     }
+  }
+
+  public model.Personaliser getPersonaliser() {
+    return personaliser;
+  }
+
+  public void setPersonaliser(model.Personaliser personaliser) {
+    this.personaliser = personaliser;
   }
 }

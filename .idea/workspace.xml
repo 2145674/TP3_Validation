@@ -6,8 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="426459d7-e390-4df3-b5ae-dd3ff14ad7af" name="Changes" comment="Classes Primitives de Test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/DeminCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/DeminCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Graphisme.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Personaliser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Personaliser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Segment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Segment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Temps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Temps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/Demineur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Demineur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/DemineurJavaFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/DemineurJavaFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/Personaliser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Personaliser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/Segment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Segment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/Temps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Temps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Expert.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Expert.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,25 +51,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;U:/Validation et maintenance/TP3/TP3/Demineur&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "U:/Validation et maintenance/TP2_Validation2_CT_VT/TP2_Validation_CT_VT",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -81,7 +89,7 @@
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="controller.Main" />
-      <module name="calculatrice" />
+      <module name="TP3_Validation" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="controller.*" />
@@ -167,6 +175,7 @@
       <workItem from="1682535641167" duration="3901000" />
       <workItem from="1682539654335" duration="2550000" />
       <workItem from="1683136073998" duration="8025000" />
+      <workItem from="1683310430737" duration="5119000" />
     </task>
     <task id="LOCAL-00001" summary="Classes Primitives">
       <created>1681493853243</created>
