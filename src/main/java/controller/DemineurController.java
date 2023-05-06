@@ -3,11 +3,10 @@ package controller;
 
 import view.Demineur;
 
-import java.util.*;
 import javax.swing.*;
 
 
-public class Main {
+public class DemineurController {
 
   public static void main(String[] args) {
     try {
