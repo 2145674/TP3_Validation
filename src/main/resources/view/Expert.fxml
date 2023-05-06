@@ -10,19 +10,19 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="369.0" prefWidth="517.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Text layoutX="14.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Partie" />
-      <CheckBox layoutX="60.0" layoutY="36.0" mnemonicParsing="false" />
-      <Text layoutX="87.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pause" />
-      <Text layoutX="136.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="?" />
-      <Pane layoutY="66.0" prefHeight="48.0" prefWidth="517.0" style="-fx-background-color: #F0F0F0;">
+      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Partie" />
+      <CheckBox layoutX="60.0" layoutY="14.0" mnemonicParsing="false" />
+      <Text layoutX="87.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pause" />
+      <Text layoutX="136.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="?" />
+      <Pane layoutY="42.0" prefHeight="48.0" prefWidth="517.0" style="-fx-background-color: #F0F0F0;">
          <children>
-            <ImageView layoutX="221.0" layoutY="11.0">
+            <ImageView layoutX="224.0" layoutY="11.0">
                <image>
                   <Image url="@../Images/sourire.gif" />
                </image>
             </ImageView>
-            <BorderPane layoutX="22.0" prefHeight="48.0" prefWidth="60.0" style="-fx-background-color: black;" />
-            <BorderPane layoutX="417.0" prefHeight="48.0" prefWidth="60.0" style="-fx-background-color: black;" />
+            <BorderPane layoutX="23.0" prefHeight="48.0" prefWidth="60.0" style="-fx-background-color: black;" />
+            <BorderPane layoutX="418.0" prefHeight="48.0" prefWidth="60.0" style="-fx-background-color: black;" />
          </children>
       </Pane>
    </children>

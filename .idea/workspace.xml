@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e21c098e-bf67-4f2e-891f-cbf1ba75ccd2" name="Changes" comment="Classes Primitives de Test">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/MenuFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/MenuNiveauDifficulte.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/MenuSwitchMode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/DeminCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/DeminCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Demineur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Demineur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/Demineur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Demineur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/DemineurJavaFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/DemineurJavaFX.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +170,7 @@
       <workItem from="1683136073998" duration="8025000" />
       <workItem from="1683152429644" duration="7000" />
       <workItem from="1683316302034" duration="7251000" />
-      <workItem from="1683392157399" duration="595000" />
+      <workItem from="1683392157399" duration="4151000" />
     </task>
     <task id="LOCAL-00001" summary="Classes Primitives">
       <created>1681493853243</created>
@@ -219,6 +215,11 @@
           <properties class="java.lang.IllegalStateException" package="java.lang" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/view/DemineurJavaFX.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

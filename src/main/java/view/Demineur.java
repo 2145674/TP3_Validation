@@ -635,12 +635,10 @@ public class Demineur
             menuAffichageEnModeJavaFX.setSelected(true);
             this.dispose(); // on détruit la fenetre
             System.gc();
-
-            DemineurJavaFX demineurJavaFX = new DemineurJavaFX();
+            //Initialement en mode expert
+            DemineurJavaFX demineurJavaFX = new DemineurJavaFX(23,32,99,3);
             demineurJavaFX.creationDuModeJavaFX();
-
             //ici
-
         } else if (e.getSource() == menuDebutant && demineur.getType() != 1) {
 
             if (demineur.getType() == 1) menuDebutant.setSelected(true);

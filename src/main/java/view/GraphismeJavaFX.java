@@ -3,13 +3,11 @@ package view;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.PixelWriter;
 import javafx.scene.image.WritableImage;
-import javafx.scene.paint.*;
 import javafx.scene.paint.Color;
 
 import java.awt.*;
-import java.awt.image.VolatileImage;
 
-public class GraphismeFX {
+public class GraphismeJavaFX {
 
     public static WritableImage drapeau, question, questionSel, mine, boum,
             erreur;
@@ -17,7 +15,7 @@ public class GraphismeFX {
     private Color[] couleurs = new Color[8];
     public static Color dessus = new Color(214, 208, 200, 0.1); //couleur du "dessus" des cases
 
-    public GraphismeFX(GraphicsConfiguration gr) {
+    public GraphismeJavaFX(GraphicsConfiguration gr) {
         //Les couleurs des chiffres
         couleurs[0] = new Color(0, 0, 255, 0.1);
         couleurs[1] = new Color(0, 128, 0, 0.1);
