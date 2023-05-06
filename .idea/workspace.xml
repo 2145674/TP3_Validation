@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="426459d7-e390-4df3-b5ae-dd3ff14ad7af" name="Changes" comment="Classes Primitives de Test">
+    <list default="true" id="e21c098e-bf67-4f2e-891f-cbf1ba75ccd2" name="Changes" comment="Classes Primitives de Test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/MenuFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/MenuNiveauDifficulte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/MenuSwitchMode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/DemineurJavaFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/DemineurJavaFX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Expert.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Expert.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/DeminCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/DeminCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Demineur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Demineur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/Demineur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Demineur.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +25,7 @@
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -43,25 +48,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;U:/Etudes/2e annee/session 2/ValidationEtMaintenance/TP3/TP3_Validation&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "U:/Validation et maintenance/TP3_clone/TP3_Validation",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -148,7 +153,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="426459d7-e390-4df3-b5ae-dd3ff14ad7af" name="Changes" comment="" />
+      <changelist id="e21c098e-bf67-4f2e-891f-cbf1ba75ccd2" name="Changes" comment="Classes Primitives de Test" />
       <created>1681493495054</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -169,6 +174,7 @@
       <workItem from="1683136073998" duration="8025000" />
       <workItem from="1683152429644" duration="7000" />
       <workItem from="1683316302034" duration="7251000" />
+      <workItem from="1683392157399" duration="595000" />
     </task>
     <task id="LOCAL-00001" summary="Classes Primitives">
       <created>1681493853243</created>

@@ -15,7 +15,6 @@ import java.awt.event.MouseListener;
  * Elle gère elle même certains evènements de la souris
  */
 
-
 public class DeminCase {
 
     private int etat = 0; //0 = rien; 1==enfonc�e; 2=drapeau; 3=?; 4=boum; 5=mine; 6=erreur de drapeau

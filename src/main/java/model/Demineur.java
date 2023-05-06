@@ -2,9 +2,8 @@ package model;
 
 import view.DeminCase;
 
-
 //le jeux...
-public class Demineur {
+public class Demineur extends MenuFactory {
     int nDrapeau = 0; //nombres de drapeaux posÃ©s
     private int nMines; //nombre total de mines
     private int LARGEUR; //nombre de cases selon la largeur
@@ -83,12 +82,5 @@ public class Demineur {
         this.casesSelectionnees = casesSelectionnees;
     }
 
-    public int getTYPE() {
-        return TYPE;
-    }
-
-    public void setTYPE(int TYPE) {
-        this.TYPE = TYPE;
-    }
 }
 

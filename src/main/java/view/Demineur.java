@@ -1,5 +1,7 @@
 package view;
 
+import model.*;
+
 import java.net.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -9,7 +11,7 @@ import javax.swing.border.*;
 //le jeux...
 public class Demineur
         extends JFrame
-        implements MouseListener, WindowListener, ActionListener {
+        implements MouseListener, WindowListener, ActionListener, MenuSwitchMode, MenuNiveauDifficulte {
     private JPanel panneauHaut = new JPanel();
     private JPanel panneauJeux = new JPanel();
     private GridBagLayout layoutPanneauJeux = new GridBagLayout();
@@ -49,7 +51,7 @@ public class Demineur
         demineur.setLARGEUR(largeur);
         demineur.setnCases(demineur.getHAUTEUR() * demineur.getLARGEUR());
         demineur.setnMines(mines);
-        demineur.setTYPE(type);
+        demineur.setType(type);
         demineur.setJeux(new DeminCase[demineur.getHAUTEUR()][demineur.getLARGEUR()]);
 
         //Récupérer les gif dans le fichier .jar
@@ -71,10 +73,7 @@ public class Demineur
         }
 
         //sélection du bon mode dans le JMenu
-        if (type == 1) menuDebutant.setSelected(true);
-        if (type == 2) menuIntermediaire.setSelected(true);
-        if (type == 3) menuExpert.setSelected(true);
-        if (type == 4) menuPerso.setSelected(true);
+        selectionnerLeNiveauDeDifficulte(type);
 
         //initialisation
         nouveau();
@@ -87,6 +86,14 @@ public class Demineur
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public void selectionnerLeNiveauDeDifficulte(int type){
+        if (type == 1) menuDebutant.setSelected(true);
+        if (type == 2) menuIntermediaire.setSelected(true);
+        if (type == 3) menuExpert.setSelected(true);
+        if (type == 4) menuPerso.setSelected(true);
     }
 
     //initialises le jeux
@@ -167,7 +174,8 @@ public class Demineur
         }
     }
 
-    private void jbInit() throws Exception {
+    @Override
+    public void jbInit() throws Exception {
         borderPanneaux = BorderFactory.createEtchedBorder(Color.white,
                 new Color(156, 156, 156));
         box2 = Box.createGlue(); //utilisÃ©s dans le jPanel1 pour la disposition
@@ -633,28 +641,28 @@ public class Demineur
 
             //ici
 
-        } else if (e.getSource() == menuDebutant && demineur.getTYPE() != 1) {
+        } else if (e.getSource() == menuDebutant && demineur.getType() != 1) {
 
-            if (demineur.getTYPE() == 1) menuDebutant.setSelected(true);
+            if (demineur.getType() == 1) menuDebutant.setSelected(true);
             Demineur demineur = new Demineur(8, 8, 10, 1); //et on en refait une
         } else if (e.getSource() == menuDebutant && !menuDebutant.isSelected())
             menuDebutant.setSelected(true);
-        else if (e.getSource() == menuIntermediaire && demineur.getTYPE() != 2) {
+        else if (e.getSource() == menuIntermediaire && demineur.getType()  != 2) {
             this.dispose(); // on dÃ©truit la fenetre
             System.gc();
-            if (demineur.getTYPE() == 2) menuIntermediaire.setSelected(true);
+            if (demineur.getType()  == 2) menuIntermediaire.setSelected(true);
             Demineur demineur = new Demineur(16, 16, 40, 2);
         } else if (e.getSource() == menuIntermediaire &&
                 !menuIntermediaire.isSelected()) menuIntermediaire.setSelected(true);
-        else if (e.getSource() == menuExpert && demineur.getTYPE() != 3) {
+        else if (e.getSource() == menuExpert && demineur.getType()  != 3) {
             this.dispose(); // on dÃ©truit la fenetre
             System.gc();
-            if (demineur.getTYPE() == 3) menuExpert.setSelected(true);
+            if (demineur.getType()  == 3) menuExpert.setSelected(true);
             Demineur demineur = new Demineur(16, 30, 99, 3);
-        } else if (e.getSource() == menuExpert && demineur.getTYPE() != 4) menuExpert.setSelected(true);
+        } else if (e.getSource() == menuExpert && demineur.getType()  != 4) menuExpert.setSelected(true);
         else if (e.getSource() == menuPerso) {
             //un peu particulier : tout est gÃ©rÃ© par la fenetre de personalisation
-            if (demineur.getTYPE() == 4) menuPerso.setSelected(true);
+            if (demineur.getType()  == 4) menuPerso.setSelected(true);
             else menuPerso.setSelected(false);
             Personaliser perso = new Personaliser(this, "Paramètres", true, demineur.getHAUTEUR(),
                     demineur.getLARGEUR(), demineur.getnMines());
