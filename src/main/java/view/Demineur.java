@@ -1,12 +1,21 @@
 package view;
 
+import controller.DemineurJavaFXController;
 import model.*;
+import javax.swing.*;
+import javafx.application.*;
+import javafx.scene.*;
+import javafx.scene.control.*;
+import javafx.scene.layout.*;
+import javafx.stage.*;
 
+import java.awt.event.WindowEvent;
 import java.net.*;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.border.*;
+import javax.swing.border.Border;
 
 //le jeux...
 public class Demineur
@@ -627,6 +636,21 @@ public class Demineur
     public void windowDeactivated(WindowEvent e) {
     }
 
+    public void demarrerJavaFX() throws Exception {
+        Platform.startup(() -> {
+            Platform.runLater(new Runnable() {
+                @Override
+                public void run() {
+                    DemineurJavaFXController demineurJavaFXController = new DemineurJavaFXController();
+                    try {
+                        demineurJavaFXController.start(new Stage());
+                    } catch (Exception e) {
+                        throw new RuntimeException(e);
+                    }
+                }
+            });
+        });
+    }
 
     //Ã©venements liÃ©s au menu
     public void actionPerformed(ActionEvent e) {
@@ -636,11 +660,15 @@ public class Demineur
             this.dispose(); // on détruit la fenetre
             System.gc();
             //Initialement en mode expert
-            DemineurJavaFX demineurJavaFX = new DemineurJavaFX(23,32,99,3);
-            demineurJavaFX.creationDuModeJavaFX();
+            try {
+                demarrerJavaFX();
+            } catch (Exception ex) {
+                throw new RuntimeException(ex);
+            }
+            //DemineurJavaFX demineurJavaFX = new DemineurJavaFX(23,32,99,3);
+            //demineurJavaFX.creationDuModeJavaFX();
             //ici
         } else if (e.getSource() == menuDebutant && demineur.getType() != 1) {
-
             if (demineur.getType() == 1) menuDebutant.setSelected(true);
             Demineur demineur = new Demineur(8, 8, 10, 1); //et on en refait une
         } else if (e.getSource() == menuDebutant && !menuDebutant.isSelected())
@@ -682,4 +710,6 @@ public class Demineur
             app.setVisible(true);
         }
     }
+
+
 }
