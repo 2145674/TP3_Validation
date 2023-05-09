@@ -1,16 +1,28 @@
 package model;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class MenuFactoryTest {
 
-    @Test
-    void getType() {
+    MenuFactory menuFactory;
+
+    @BeforeEach
+    public void initEach() {
+        //Given
+        menuFactory = new MenuFactory();
     }
 
     @Test
-    void setType() {
+    void setEtGetType() {
+        //When
+        menuFactory.setType(2);
+
+        //Then
+        assertEquals(2, menuFactory.getType());
+
     }
+
 }

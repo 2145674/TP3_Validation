@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e21c098e-bf67-4f2e-891f-cbf1ba75ccd2" name="Changes" comment="Classes Primitives de Test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/DeminCaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/DemineurTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/MenuFactoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/PersonaliserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/SegmentTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/TempsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/420-4C6 H23 - tp3 .docx" beforeDir="false" afterPath="$PROJECT_DIR$/420-4C6 H23 - tp3 .docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/Graphisme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Graphisme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/model/AproposTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/DemineurTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/DemineurTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/MenuFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/MenuFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/PersonaliserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/PersonaliserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/SegmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/SegmentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,29 +47,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "U:/Validation et maintenance/TP3_clone/TP3_Validation",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;U:/Validation et maintenance/TP3_clone/TP3_Validation&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -93,71 +86,8 @@
       <recent name="org.example.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DemineurTest.getnDrapeau">
-    <configuration name="DeminCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TP3_Validation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.DeminCaseTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeminCaseTest.setEtGetEtat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TP3_Validation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.DeminCaseTest" />
-      <option name="METHOD_NAME" value="setEtGetEtat" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeminCaseTest.setEtGetGr" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TP3_Validation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.DeminCaseTest" />
-      <option name="METHOD_NAME" value="setEtGetGr" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeminCaseTest.setEtIsMine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TP3_Validation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.DeminCaseTest" />
-      <option name="METHOD_NAME" value="setEtIsMine" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemineurTest.getnDrapeau" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SegmentTest">
+    <configuration name="DemineurTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TP3_Validation" />
       <extension name="coverage">
         <pattern>
@@ -167,7 +97,67 @@
       </extension>
       <option name="PACKAGE_NAME" value="model" />
       <option name="MAIN_CLASS_NAME" value="model.DemineurTest" />
-      <option name="METHOD_NAME" value="getnDrapeau" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MenuFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP3_Validation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.MenuFactoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonaliserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP3_Validation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.PersonaliserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SegmentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP3_Validation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.SegmentTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SegmentTest.etantDonneLeTableauDeBoolean_quandUneCaseEstAppelee_alorsElleRetourneLaBonneValeurBoolean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP3_Validation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.SegmentTest" />
+      <option name="METHOD_NAME" value="etantDonneLeTableauDeBoolean_quandUneCaseEstAppelee_alorsElleRetourneLaBonneValeurBoolean" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -175,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DemineurTest.getnDrapeau" />
-        <item itemvalue="JUnit.DeminCaseTest" />
-        <item itemvalue="JUnit.DeminCaseTest.setEtGetGr" />
-        <item itemvalue="JUnit.DeminCaseTest.setEtIsMine" />
-        <item itemvalue="JUnit.DeminCaseTest.setEtGetEtat" />
+        <item itemvalue="JUnit.SegmentTest" />
+        <item itemvalue="JUnit.SegmentTest.etantDonneLeTableauDeBoolean_quandUneCaseEstAppelee_alorsElleRetourneLaBonneValeurBoolean" />
+        <item itemvalue="JUnit.PersonaliserTest" />
+        <item itemvalue="JUnit.MenuFactoryTest" />
+        <item itemvalue="JUnit.DemineurTest" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +199,8 @@
       <workItem from="1683316302034" duration="7251000" />
       <workItem from="1683392157399" duration="5002000" />
       <workItem from="1683635362174" duration="3407000" />
-      <workItem from="1683638884412" duration="4934000" />
+      <workItem from="1683638884412" duration="5041000" />
+      <workItem from="1683648713903" duration="5004000" />
     </task>
     <task id="LOCAL-00001" summary="Classes Primitives">
       <created>1681493853243</created>
