@@ -1,46 +1,20 @@
 package view;
 
-import javafx.application.Application;
 import javafx.application.Platform;
+import javafx.application.*;
 import javafx.embed.swing.JFXPanel;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
-
-import javafx.scene.layout.VBox;
-import javafx.scene.shape.Line;
-import model.MenuNiveauDifficulte;
-import model.MenuSwitchMode;
-
-import javax.swing.*;
-import java.io.IOException;
-import java.net.URL;
-import javafx.fxml.FXML;
-import javafx.application.Platform;
-import javafx.embed.swing.JFXPanel;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.*;
-import javafx.scene.control.*;
-import javafx.scene.control.Button;
+import javafx.scene.control.CheckMenuItem;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
-import javafx.scene.image.Image;
-import javafx.scene.shape.Line;
+import javafx.scene.layout.VBox;
 import model.MenuNiveauDifficulte;
 import model.MenuSwitchMode;
-import view.DeminCase;
-import view.DemineurJavaFX;
-import javafx.scene.image.ImageView;
-import view.Segment;
-import view.Temps;
 
 import javax.swing.*;
-import javax.swing.border.Border;
 import java.awt.*;
-import java.awt.event.MouseListener;
 import java.io.IOException;
-import java.net.URL;
 
 
 public class DemineurJavaFX implements MenuSwitchMode, MenuNiveauDifficulte {
@@ -80,9 +54,6 @@ public class DemineurJavaFX implements MenuSwitchMode, MenuNiveauDifficulte {
 
     private model.Demineur demineur = new model.Demineur();
 
-    public static void main(String[] args) {
-        Application.launch(args);
-    }
     public DemineurJavaFX(int hauteur, int largeur, int mines, int type) {
         demineur.setHAUTEUR(hauteur);
         demineur.setLARGEUR(largeur);
@@ -141,12 +112,12 @@ public class DemineurJavaFX implements MenuSwitchMode, MenuNiveauDifficulte {
         //paramÃ¨tres des cases
         for (int i = 0; i < demineur.getHAUTEUR(); i++) {
             for (int j = 0; j < demineur.getLARGEUR(); j++) {
-                demineur.getJeux()[i][j].reset();
-                demineur.getJeux()[i][j].removeMouseListener((MouseListener) this); //nÃ©cÃ©ssaire pour Ã©viter un bug lors de l'appel de nouveau() une 2Ã¨me fois
-                demineur.getJeux()[i][j].addMouseListener((MouseListener) this); //pour les clics!!!
-                if (demineur.getMines().charAt(i * demineur.getLARGEUR() + j) == '1') {
-                    demineur.getJeux()[i][j].getDeminCase().setMine(true);
-                }
+//                demineur.getJeux()[i][j].reset();
+//                demineur.getJeux()[i][j].removeMouseListener(this); //nÃ©cÃ©ssaire pour Ã©viter un bug lors de l'appel de nouveau() une 2Ã¨me fois
+//                demineur.getJeux()[i][j].addMouseListener( this); //pour les clics!!!
+//                if (demineur.getMines().charAt(i * demineur.getLARGEUR() + j) == '1') {
+//                    demineur.getJeux()[i][j].getDeminCase().setMine(true);
+//                }
             }
         }
         //repaint();
@@ -214,43 +185,43 @@ public class DemineurJavaFX implements MenuSwitchMode, MenuNiveauDifficulte {
                 throw new RuntimeException(e);
             }
 
-            Platform.runLater(new Runnable() {
-                @Override
-                public void run() {
+            Platform.runLater(() -> {
                     try {
                         initFX(jfxPanel);
                     } catch (IOException e) {
                         throw new RuntimeException(e);
                     }
-
-                }
             });
         });
     }
 
     private void initFX(JFXPanel jfxPanel) throws IOException {
-        Scene scene = createScene();
-        jfxPanel.setScene(scene);
-    }
-
-    private Scene createScene() throws IOException {
         partie.getItems().addAll(menuNouveau, menuAffichageEnModeJavaFX, menuDebutant, menuIntermediaire, menuExpert, menuPerso);
         menu.getMenus().add(partie);
         VBox root = new VBox();
         root.getChildren().add(menu);
-        //FXMLLoader fxmlLoader = new FXMLLoader(DemineurJavaFX.class.getResource("/view/Expert.fxml"));
-        //Parent root = fxmlLoader.load();
         Scene scene = new Scene(root, 600, 400);
-        return (scene);
+        jfxPanel.setScene(scene);
     }
+
+//    private Scene createScene() throws IOException {
+//        partie.getItems().addAll(menuNouveau, menuAffichageEnModeJavaFX, menuDebutant, menuIntermediaire, menuExpert, menuPerso);
+//        menu.getMenus().add(partie);
+//        VBox root = new VBox();
+//        root.getChildren().add(menu);
+////        FXMLLoader fxmlLoader = new FXMLLoader(DemineurJavaFX.class.getResource("/view/Expert.fxml"));
+// //       Parent root = fxmlLoader.load();
+//        Scene scene = new Scene(root, 600, 400);
+//        return (scene);
+//    }
 
 
     @Override
     public void selectionnerLeNiveauDeDifficulte(int type) {
-        if (type == 1) menuDebutant.setSelected(true);
-        if (type == 2) menuIntermediaire.setSelected(true);
-        if (type == 3) menuExpert.setSelected(true);
-        if (type == 4) menuPerso.setSelected(true);
+//        if (type == 1) menuDebutant.setSelected(true);
+//        if (type == 2) menuIntermediaire.setSelected(true);
+//        if (type == 3) menuExpert.setSelected(true);
+//        if (type == 4) menuPerso.setSelected(true);
     }
 
     @Override
