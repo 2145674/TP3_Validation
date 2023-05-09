@@ -1,20 +1,4 @@
-package view;
-
-import javafx.application.Application;
-import javafx.application.Platform;
-import javafx.embed.swing.JFXPanel;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-
-import javafx.scene.layout.VBox;
-import javafx.scene.shape.Line;
-import model.MenuNiveauDifficulte;
-import model.MenuSwitchMode;
-
-import javax.swing.*;
-import java.io.IOException;
-import java.net.URL;
+package controller;
 import javafx.fxml.FXML;
 import javafx.application.Platform;
 import javafx.embed.swing.JFXPanel;
@@ -42,48 +26,50 @@ import java.awt.event.MouseListener;
 import java.io.IOException;
 import java.net.URL;
 
+import static javafx.application.Application.launch;
 
-public class DemineurJavaFX implements MenuSwitchMode, MenuNiveauDifficulte {
+public class DemineurJavaFXController implements MenuSwitchMode, MenuNiveauDifficulte {
 
-    JFrame frame = new JFrame();
+    private JFrame frame = new JFrame();
+    private Button button = new Button();
+    private ImageView sourire = new ImageView(new Image("Images/sourire.gif"));
+    private ImageView oups = new ImageView(new Image("Images/oups.gif")) ;
+    private ImageView cool = new ImageView(new Image("Images/cool.gif")) ;
 
-//    private Button button = new Button();
-//    private ImageView sourire = new ImageView(new Image("Images/sourire.gif"));
- //   private ImageView oups = new ImageView(new Image("Images/oups.gif")) ;
-  //  private ImageView cool = new ImageView(new Image("Images/cool.gif")) ;
-
-//    private JPanel panneauHaut = new JPanel();
-//    private JPanel panneauJeux = new JPanel();
-//    private GridBagLayout layoutPanneauJeux = new GridBagLayout();
-//    private Segment affMines = new Segment(); //l'afficheur du nombre de mines
-//    private Button boutonNouveau = new Button();
-//    private Segment affTemps = new Segment(); //l'afficheur du temps Ã©coulÃ©
-//    private Border borderPanneaux;
+    private JPanel panneauHaut = new JPanel();
+    private JPanel panneauJeux = new JPanel();
+    private GridBagLayout layoutPanneauJeux = new GridBagLayout();
+    private Segment affMines = new Segment(); //l'afficheur du nombre de mines
+    private Button boutonNouveau = new Button();
+    private Segment affTemps = new Segment(); //l'afficheur du temps Ã©coulÃ©
+    private Border borderPanneaux;
     private MenuBar menu = new MenuBar();
     private Menu partie = new Menu("Partie");
-//    private CheckBox pause = new CheckBox("Pause");
-//    private Menu help = new Menu("?");
+    private CheckBox pause = new CheckBox("Pause");
+    private Menu help = new Menu("?");
     private MenuItem menuNouveau = new MenuItem("Nouveau");
     private MenuItem menuAffichageEnModeJavaFX = new CheckMenuItem("Affichage en mode JavaFX");
     CheckMenuItem menuDebutant = new CheckMenuItem("Débutant");
     CheckMenuItem menuIntermediaire = new CheckMenuItem("Intermédiaire");
     CheckMenuItem menuExpert = new CheckMenuItem("Expert");
     CheckMenuItem menuPerso = new CheckMenuItem("Personalisé");
-//    private MenuItem apropos = new MenuItem("A propos");
-//    private BoxLayout layoutPanneauHaut = new BoxLayout(panneauHaut,
-//            BoxLayout.LINE_AXIS);
-//    private Node box2; //Boxes utilisÃ©es dans le BoxLayout
-//    private Node box3;
-//    private Node box1;
-//    private Node box4;
-//    private Temps temps = new Temps(affTemps); //timer sur l'affichage
+    private MenuItem apropos = new MenuItem("A propos");
+    private BoxLayout layoutPanneauHaut = new BoxLayout(panneauHaut,
+            BoxLayout.LINE_AXIS);
+    private Node box2; //Boxes utilisÃ©es dans le BoxLayout
+    private Node box3;
+    private Node box1;
+    private Node box4;
+    private Temps temps = new Temps(affTemps); //timer sur l'affichage
 
     private model.Demineur demineur = new model.Demineur();
 
-    public static void main(String[] args) {
-        Application.launch(args);
+
+    public DemineurJavaFXController() {
+        button.setGraphic(new ImageView());
     }
-    public DemineurJavaFX(int hauteur, int largeur, int mines, int type) {
+
+    public DemineurJavaFXController(int hauteur, int largeur, int mines, int type) {
         demineur.setHAUTEUR(hauteur);
         demineur.setLARGEUR(largeur);
         demineur.setnCases(demineur.getHAUTEUR() * demineur.getLARGEUR());
@@ -104,29 +90,28 @@ public class DemineurJavaFX implements MenuSwitchMode, MenuNiveauDifficulte {
         //initialisation
         nouveau();
 
-      /*  try {
+        try {
             //Graphisme
             jbInit();
-            // this.setVisible(true);  revenir
+           // this.setVisible(true);  revenir
             boutonNouveau.requestFocus();
         } catch (Exception e) {
             e.printStackTrace();
-        }*/
+        }
     }
 
-    public DemineurJavaFX() {
-    }
+
 
     //initialises le jeux
     public void nouveau() {
-//        temps.cancel(); //Timer Ã  0
-////        boutonNouveau.setGraphic(sourire); //Icon par dÃ©faut du bouton
-//        demineur.setnDrapeau(0);  //rÃ©initialisation des principaux paramÃ¨tres
-//        demineur.setnCases(demineur.getHAUTEUR() * demineur.getLARGEUR());
-//        affMines.setValeur(demineur.getnMines());
-//        affTemps.setValeur(0);
-//        panneauJeux.setVisible(true); //peut Ãªtre Ã  false en raison de la pause
-//        pause.setSelected(false);
+        temps.cancel(); //Timer Ã  0
+        boutonNouveau.setGraphic(sourire); //Icon par dÃ©faut du bouton
+        demineur.setnDrapeau(0);  //rÃ©initialisation des principaux paramÃ¨tres
+        demineur.setnCases(demineur.getHAUTEUR() * demineur.getLARGEUR());
+        affMines.setValeur(demineur.getnMines());
+        affTemps.setValeur(0);
+        panneauJeux.setVisible(true); //peut Ãªtre Ã  false en raison de la pause
+        pause.setSelected(false);
 
         //Génération des mines
         //dans la chaine, 1=mine 0=rien
@@ -195,36 +180,29 @@ public class DemineurJavaFX implements MenuSwitchMode, MenuNiveauDifficulte {
         }
     }
 
-
-
     public void creationDuModeJavaFX() {
 
-        Platform.startup(() -> {
-            ;
-            frame = new JFrame("Démineur en mode JavaFX");
-            final JFXPanel jfxPanel = new JFXPanel();
-            //Line line = new Line(100, 10, 10, 110);
-            frame.add(jfxPanel, BorderLayout.CENTER);
-            frame.setSize(400, 600);
-            frame.setVisible(true);
+        frame = new JFrame("Démineur en mode JavaFX");
+        final JFXPanel jfxPanel = new JFXPanel();
+        Line line = new Line(100, 10, 10, 110);
+        frame.add(jfxPanel);
 
-            try {
-                jbInit();
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
+        try {
+            jbInit();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
-            Platform.runLater(new Runnable() {
-                @Override
-                public void run() {
-                    try {
-                        initFX(jfxPanel);
-                    } catch (IOException e) {
-                        throw new RuntimeException(e);
-                    }
-
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    initFX(jfxPanel);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
                 }
-            });
+
+            }
         });
     }
 
@@ -233,24 +211,11 @@ public class DemineurJavaFX implements MenuSwitchMode, MenuNiveauDifficulte {
         jfxPanel.setScene(scene);
     }
 
-    private Scene createScene() throws IOException {
-        partie.getItems().addAll(menuNouveau, menuAffichageEnModeJavaFX, menuDebutant, menuIntermediaire, menuExpert, menuPerso);
-        menu.getMenus().add(partie);
-        VBox root = new VBox();
-        root.getChildren().add(menu);
-        //FXMLLoader fxmlLoader = new FXMLLoader(DemineurJavaFX.class.getResource("/view/Expert.fxml"));
-        //Parent root = fxmlLoader.load();
+    private static Scene createScene() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(DemineurJavaFX.class.getResource("/view/Expert.fxml"));
+        Parent root = fxmlLoader.load();
         Scene scene = new Scene(root, 600, 400);
         return (scene);
-    }
-
-
-    @Override
-    public void selectionnerLeNiveauDeDifficulte(int type) {
-        if (type == 1) menuDebutant.setSelected(true);
-        if (type == 2) menuIntermediaire.setSelected(true);
-        if (type == 3) menuExpert.setSelected(true);
-        if (type == 4) menuPerso.setSelected(true);
     }
 
     @Override
@@ -262,5 +227,16 @@ public class DemineurJavaFX implements MenuSwitchMode, MenuNiveauDifficulte {
         frame.setSize(tailleX, tailleY);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
     }
+
+
+    @Override
+    public void selectionnerLeNiveauDeDifficulte(int type) {
+        if (type == 1) menuDebutant.setSelected(true);
+        if (type == 2) menuIntermediaire.setSelected(true);
+        if (type == 3) menuExpert.setSelected(true);
+        if (type == 4) menuPerso.setSelected(true);
+    }
+
 }

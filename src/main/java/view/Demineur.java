@@ -1,5 +1,6 @@
 package view;
 
+import controller.DemineurJavaFXController;
 import model.*;
 
 import java.net.*;
@@ -636,6 +637,8 @@ public class Demineur
             this.dispose(); // on détruit la fenetre
             System.gc();
             //Initialement en mode expert
+            //DemineurJavaFXController demineurJavaFXController = new DemineurJavaFXController(23,32,99,3);
+            //demineurJavaFXController.creationDuModeJavaFX();
             DemineurJavaFX demineurJavaFX = new DemineurJavaFX(23,32,99,3);
             demineurJavaFX.creationDuModeJavaFX();
             //ici
