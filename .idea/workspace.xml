@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e21c098e-bf67-4f2e-891f-cbf1ba75ccd2" name="Changes" comment="Classes Primitives de Test">
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/DeminCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/DemineurTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/MenuFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/PersonaliserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/SegmentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/TempsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DemineurController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/DemineurJavaFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/DemineurJavaFX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/GraphismeFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/GraphismeJavaFX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~$0-4C6 H23 - tp3 .docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/420-4C6 H23 - tp3 .docx" beforeDir="false" afterPath="$PROJECT_DIR$/420-4C6 H23 - tp3 .docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/Graphisme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Graphisme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/AproposTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +28,10 @@
       <list>
         <option value="CSS File" />
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
         <option value="Interface" />
+        <option value="JUnit4 Test Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -52,16 +60,20 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
     "last_opened_file_path": "U:/Validation et maintenance/TP3_clone/TP3_Validation",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -81,59 +93,81 @@
       <recent name="org.example.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DemineurController">
-    <configuration name="DemineurController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="controller.DemineurController" />
+  <component name="RunManager" selected="JUnit.DemineurTest.getnDrapeau">
+    <configuration name="DeminCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TP3_Validation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="controller.*" />
+          <option name="PATTERN" value="model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TP2Controller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.controller.TP2Controller" />
-      <module name="calculatrice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FactureAvecDonsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="calculatrice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.model" />
-      <option name="MAIN_CLASS_NAME" value="org.example.model.FactureAvecDonsTest" />
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.DeminCaseTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FactureAvecDonsTest.etantDonneUnTotalAvecTaxesPositifEtUnModeDePaiementArgentComptant_quandCalculDuDon_alorsResultatNombreAVirgule" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="calculatrice" />
+    <configuration name="DeminCaseTest.setEtGetEtat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP3_Validation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.model.*" />
+          <option name="PATTERN" value="model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.model" />
-      <option name="MAIN_CLASS_NAME" value="org.example.model.FactureAvecDonsTest" />
-      <option name="METHOD_NAME" value="etantDonneUnTotalAvecTaxesPositifEtUnModeDePaiementArgentComptant_quandCalculDuDon_alorsResultatNombreAVirgule" />
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.DeminCaseTest" />
+      <option name="METHOD_NAME" value="setEtGetEtat" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeminCaseTest.setEtGetGr" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP3_Validation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.DeminCaseTest" />
+      <option name="METHOD_NAME" value="setEtGetGr" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeminCaseTest.setEtIsMine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP3_Validation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.DeminCaseTest" />
+      <option name="METHOD_NAME" value="setEtIsMine" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemineurTest.getnDrapeau" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP3_Validation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.DemineurTest" />
+      <option name="METHOD_NAME" value="getnDrapeau" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,10 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DemineurController" />
-        <item itemvalue="JUnit.FactureAvecDonsTest" />
-        <item itemvalue="JUnit.FactureAvecDonsTest.etantDonneUnTotalAvecTaxesPositifEtUnModeDePaiementArgentComptant_quandCalculDuDon_alorsResultatNombreAVirgule" />
-        <item itemvalue="Application.TP2Controller" />
+        <item itemvalue="JUnit.DemineurTest.getnDrapeau" />
+        <item itemvalue="JUnit.DeminCaseTest" />
+        <item itemvalue="JUnit.DeminCaseTest.setEtGetGr" />
+        <item itemvalue="JUnit.DeminCaseTest.setEtIsMine" />
+        <item itemvalue="JUnit.DeminCaseTest.setEtGetEtat" />
       </list>
     </recent_temporary>
   </component>
@@ -173,6 +208,8 @@
       <workItem from="1683152429644" duration="7000" />
       <workItem from="1683316302034" duration="7251000" />
       <workItem from="1683392157399" duration="5002000" />
+      <workItem from="1683635362174" duration="3407000" />
+      <workItem from="1683638884412" duration="4934000" />
     </task>
     <task id="LOCAL-00001" summary="Classes Primitives">
       <created>1681493853243</created>

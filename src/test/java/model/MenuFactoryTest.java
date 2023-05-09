@@ -4,9 +4,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class AproposTest {
+class MenuFactoryTest {
 
     @Test
-    void actionPerformed() {
+    void getType() {
+    }
+
+    @Test
+    void setType() {
     }
 }

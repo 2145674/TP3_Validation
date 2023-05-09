@@ -194,4 +194,8 @@ public class Graphisme {
     g.drawLine(6, 6, 6, 6);
     g.dispose();
   }
+
+  public Graphisme() {
+  }
+
 }
