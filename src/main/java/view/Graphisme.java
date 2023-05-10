@@ -3,8 +3,11 @@ package view;
 import java.awt.image.*;
 import java.awt.*;
 
-//Cette classe contient tous les graphismes des cases
-//Les images sont crées à partir d'un GraphicsConfiguration du JFrame
+/**
+ Cette classe contient tous les graphismes des cases
+ Les images sont crées à partir d'un GraphicsConfiguration du JFrame
+ */
+
 public class Graphisme {
 
   public static VolatileImage drapeau, question, questionSel, mine, boum,
