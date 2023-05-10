@@ -17,7 +17,10 @@ import javax.swing.*;
 import javax.swing.border.*;
 import javax.swing.border.Border;
 
-//le jeux...
+/**
+ * Classe du jeu en lui-même
+ * Les eléments graphiques sont gérés ici
+ */
 public class Demineur
         extends JFrame
         implements MouseListener, WindowListener, ActionListener, MenuSwitchMode, MenuNiveauDifficulte {
@@ -97,6 +100,10 @@ public class Demineur
         }
     }
 
+    /**
+     * Méthode permettant de selectionner le niveau de difficulté
+     * @param type
+     */
     @Override
     public void selectionnerLeNiveauDeDifficulte(int type){
         if (type == 1) menuDebutant.setSelected(true);
@@ -488,6 +495,15 @@ public class Demineur
         if (!pause.isSelected()) nouveau();
     }
 
+    //Accesseur et mutateur pour le demineur
+    public model.Demineur getDemineur() {
+        return demineur;
+    }
+
+    public void setDemineur(model.Demineur demineur) {
+        this.demineur = demineur;
+    }
+
     //mÃ©thode pour dÃ©couvrir les cases
     public void decouvre(int y, int x) {
         //Si la case est normale ou avec un ?
@@ -636,8 +652,13 @@ public class Demineur
     public void windowDeactivated(WindowEvent e) {
     }
 
+    /**
+     * Méthode permattant le switch vers la fenêtre de JavaFx
+     * Elle appelle juste la méthode start du controllerJavaFX
+     * @throws Exception
+     */
     public void demarrerJavaFX() throws Exception {
-       // Platform.startup(() -> {
+        Platform.startup(() -> {
             Platform.runLater(new Runnable() {
                 @Override
                 public void run() {
@@ -649,7 +670,7 @@ public class Demineur
                     }
                 }
             });
-        //});
+        });
     }
 
     //Ã©venements liÃ©s au menu
