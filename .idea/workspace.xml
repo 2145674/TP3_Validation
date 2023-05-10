@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e21c098e-bf67-4f2e-891f-cbf1ba75ccd2" name="Changes" comment="Classes Primitives de Test">
+    <list default="true" id="426459d7-e390-4df3-b5ae-dd3ff14ad7af" name="Changes" comment="Classes Primitives de Test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/Demineur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Demineur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/view/DemineurTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/view/DemineurTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DemineurJavaFXController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DemineurJavaFXController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/DemineurJavaFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/DemineurJavaFX.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +19,9 @@
       <list>
         <option value="CSS File" />
         <option value="Enum" />
+        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -51,7 +51,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;U:/Etudes/2e annee/session 2/ValidationEtMaintenance/TP2_Validation2_CT_VT/TP2_Validation2XXX&quot;,
+    &quot;last_opened_file_path&quot;: &quot;U:/Etudes/2e annee/session 2/ValidationEtMaintenance/TP3/TP3_Validation&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -75,15 +75,14 @@
       <recent name="org.example.model" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="view" />
       <recent name="model" />
       <recent name="org.example.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DemineurTest">
+  <component name="RunManager" selected="Application.DemineurController">
     <configuration name="DemineurController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="controller.DemineurController" />
-      <module name="TP3Validation" />
+      <module name="TP3_Validation" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="controller.*" />
@@ -94,49 +93,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemineurTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TP3Validation" />
+    <configuration name="TP2Controller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.controller.TP2Controller" />
+      <module name="calculatrice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="view.*" />
+          <option name="PATTERN" value="org.example.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="view" />
-      <option name="MAIN_CLASS_NAME" value="view.DemineurTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemineurTest.etantDonneLUtilisateurJoueAuDemineur_quandLUtilisateurPerdCarEtatDeLaDeminCaseA0ETLaCaseEstUneMine_alorsLeBoutonSourirAfficheLEtatMort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TP3Validation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="view.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="view" />
-      <option name="MAIN_CLASS_NAME" value="view.DemineurTest" />
-      <option name="METHOD_NAME" value="etantDonneLUtilisateurJoueAuDemineur_quandLUtilisateurPerdCarEtatDeLaDeminCaseA0ETLaCaseEstUneMine_alorsLeBoutonSourirAfficheLEtatMort" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemineurTest.etantDonneLUtilisateurJoueAuDemineur_quandLUtilisateurPerdCarEtatDeLaDeminCaseA3ETLaCaseEstUneMine_alorsLeBoutonSourirAfficheLEtatMort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TP3Validation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="view.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="view" />
-      <option name="MAIN_CLASS_NAME" value="view.DemineurTest" />
-      <option name="METHOD_NAME" value="etantDonneLUtilisateurJoueAuDemineur_quandLUtilisateurPerdCarEtatDeLaDeminCaseA3ETLaCaseEstUneMine_alorsLeBoutonSourirAfficheLEtatMort" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -156,13 +121,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FactureAvecDonsTest.etantDonneUnTotalAvecTaxesPositifEtUnModeDePaiementArgentComptant_quandCalculDuDon_alorsResultatNombreAVirgule" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="calculatrice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.model" />
+      <option name="MAIN_CLASS_NAME" value="org.example.model.FactureAvecDonsTest" />
+      <option name="METHOD_NAME" value="etantDonneUnTotalAvecTaxesPositifEtUnModeDePaiementArgentComptant_quandCalculDuDon_alorsResultatNombreAVirgule" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DemineurTest" />
-        <item itemvalue="JUnit.DemineurTest.etantDonneLUtilisateurJoueAuDemineur_quandLUtilisateurPerdCarEtatDeLaDeminCaseA3ETLaCaseEstUneMine_alorsLeBoutonSourirAfficheLEtatMort" />
-        <item itemvalue="JUnit.DemineurTest.etantDonneLUtilisateurJoueAuDemineur_quandLUtilisateurPerdCarEtatDeLaDeminCaseA0ETLaCaseEstUneMine_alorsLeBoutonSourirAfficheLEtatMort" />
         <item itemvalue="Application.DemineurController" />
         <item itemvalue="JUnit.FactureAvecDonsTest" />
+        <item itemvalue="JUnit.FactureAvecDonsTest.etantDonneUnTotalAvecTaxesPositifEtUnModeDePaiementArgentComptant_quandCalculDuDon_alorsResultatNombreAVirgule" />
+        <item itemvalue="Application.TP2Controller" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +171,9 @@
       <workItem from="1683152429644" duration="7000" />
       <workItem from="1683316302034" duration="7251000" />
       <workItem from="1683392157399" duration="5002000" />
-      <workItem from="1683648744368" duration="5572000" />
+      <workItem from="1683648744368" duration="5954000" />
+      <workItem from="1683707343375" duration="3860000" />
+      <workItem from="1683720220540" duration="6233000" />
     </task>
     <task id="LOCAL-00001" summary="Classes Primitives">
       <created>1681493853243</created>
@@ -236,11 +218,6 @@
           <properties class="java.lang.IllegalStateException" package="java.lang" />
           <option name="timeStamp" value="3" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/view/Demineur.java</url>
-          <line>687</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
