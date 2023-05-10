@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="426459d7-e390-4df3-b5ae-dd3ff14ad7af" name="Changes" comment="Classes Primitives de Test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/Demineur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Demineur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DemineurJavaFXController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DemineurJavaFXController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/DemineurJavaFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/DemineurJavaFX.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +173,7 @@
       <workItem from="1683392157399" duration="5002000" />
       <workItem from="1683648744368" duration="5954000" />
       <workItem from="1683707343375" duration="3860000" />
-      <workItem from="1683720220540" duration="3111000" />
+      <workItem from="1683720220540" duration="6233000" />
     </task>
     <task id="LOCAL-00001" summary="Classes Primitives">
       <created>1681493853243</created>
