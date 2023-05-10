@@ -504,6 +504,14 @@ public class Demineur
         this.demineur = demineur;
     }
 
+    public JButton getBoutonNouveau() {
+        return boutonNouveau;
+    }
+
+    public Icon getOups() {
+        return oups;
+    }
+
     //mÃ©thode pour dÃ©couvrir les cases
     public void decouvre(int y, int x) {
         //Si la case est normale ou avec un ?
