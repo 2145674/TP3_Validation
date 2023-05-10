@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e21c098e-bf67-4f2e-891f-cbf1ba75ccd2" name="Changes" comment="Classes Primitives de Test">
+      <change afterPath="$PROJECT_DIR$/src/test/java/view/DemineurTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,9 +18,9 @@
       <list>
         <option value="CSS File" />
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -73,6 +74,7 @@
       <recent name="org.example.model" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="view" />
       <recent name="model" />
       <recent name="org.example.model" />
     </key>
@@ -80,7 +82,7 @@
   <component name="RunManager" selected="Application.DemineurController">
     <configuration name="DemineurController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="controller.DemineurController" />
-      <module name="TP3_Validation" />
+      <module name="TP3Validation" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="controller.*" />
