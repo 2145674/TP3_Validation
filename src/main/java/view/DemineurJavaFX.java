@@ -167,55 +167,6 @@ public class DemineurJavaFX implements MenuSwitchMode, MenuNiveauDifficulte {
     }
 
 
-
-    public void creationDuModeJavaFX() {
-
-        Platform.startup(() -> {
-            ;
-            frame = new JFrame("Démineur en mode JavaFX");
-            final JFXPanel jfxPanel = new JFXPanel();
-            //Line line = new Line(100, 10, 10, 110);
-            frame.add(jfxPanel, BorderLayout.CENTER);
-            frame.setSize(400, 600);
-            frame.setVisible(true);
-
-            try {
-                jbInit();
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-
-            Platform.runLater(() -> {
-                    try {
-                        initFX(jfxPanel);
-                    } catch (IOException e) {
-                        throw new RuntimeException(e);
-                    }
-            });
-        });
-    }
-
-    private void initFX(JFXPanel jfxPanel) throws IOException {
-        partie.getItems().addAll(menuNouveau, menuAffichageEnModeJavaFX, menuDebutant, menuIntermediaire, menuExpert, menuPerso);
-        menu.getMenus().add(partie);
-        VBox root = new VBox();
-        root.getChildren().add(menu);
-        Scene scene = new Scene(root, 600, 400);
-        jfxPanel.setScene(scene);
-    }
-
-//    private Scene createScene() throws IOException {
-//        partie.getItems().addAll(menuNouveau, menuAffichageEnModeJavaFX, menuDebutant, menuIntermediaire, menuExpert, menuPerso);
-//        menu.getMenus().add(partie);
-//        VBox root = new VBox();
-//        root.getChildren().add(menu);
-////        FXMLLoader fxmlLoader = new FXMLLoader(DemineurJavaFX.class.getResource("/view/Expert.fxml"));
-// //       Parent root = fxmlLoader.load();
-//        Scene scene = new Scene(root, 600, 400);
-//        return (scene);
-//    }
-
-
     @Override
     public void selectionnerLeNiveauDeDifficulte(int type) {
 //        if (type == 1) menuDebutant.setSelected(true);

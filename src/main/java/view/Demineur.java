@@ -637,7 +637,7 @@ public class Demineur
     }
 
     public void demarrerJavaFX() throws Exception {
-        Platform.startup(() -> {
+       // Platform.startup(() -> {
             Platform.runLater(new Runnable() {
                 @Override
                 public void run() {
@@ -649,7 +649,7 @@ public class Demineur
                     }
                 }
             });
-        });
+        //});
     }
 
     //Ã©venements liÃ©s au menu
@@ -665,8 +665,6 @@ public class Demineur
             } catch (Exception ex) {
                 throw new RuntimeException(ex);
             }
-            //DemineurJavaFX demineurJavaFX = new DemineurJavaFX(23,32,99,3);
-            //demineurJavaFX.creationDuModeJavaFX();
             //ici
         } else if (e.getSource() == menuDebutant && demineur.getType() != 1) {
             if (demineur.getType() == 1) menuDebutant.setSelected(true);

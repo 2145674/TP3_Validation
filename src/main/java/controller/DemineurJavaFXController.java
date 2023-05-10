@@ -86,7 +86,7 @@ public class DemineurJavaFXController extends Application implements MenuSwitchM
         root.getChildren().add(menu);
         root.getChildren().add(gridPane);
 
-        for (int ligne = 0; ligne < 10; ligne++) {
+        for (int ligne = 0; ligne < 15; ligne++) {
             for (int colonne = 0; colonne < 8; colonne++) {
                 Button caseButton = new Button();
                 caseButton.setPrefSize(25, 25);
@@ -96,28 +96,6 @@ public class DemineurJavaFXController extends Application implements MenuSwitchM
         Scene scene = new Scene(root, 500, 400);
         primaryStage.setScene(scene);
         primaryStage.show();
-
-//        frame = new JFrame();
-//        final JFXPanel jfxPanel = new JFXPanel();
-//        Line line = new Line(100, 10, 10, 110);
-//        frame.add(jfxPanel);
-//
-//        try {
-//            jbInit();
-//        } catch (Exception e) {
-//            throw new RuntimeException(e);
-//        }
-//
-//        Platform.runLater(new Runnable() {
-//            @Override
-//            public void run() {
-//                try {
-//                    initFX(jfxPanel);
-//                } catch (IOException e) {
-//                    throw new RuntimeException(e);
-//                }
-//            }
-//        });
     }
 
     public static void main(String[] args) {
@@ -125,36 +103,7 @@ public class DemineurJavaFXController extends Application implements MenuSwitchM
     }
 
 
-    public DemineurJavaFXController(int hauteur, int largeur, int mines, int type) {
-        demineur.setHAUTEUR(hauteur);
-        demineur.setLARGEUR(largeur);
-        demineur.setnCases(demineur.getHAUTEUR() * demineur.getLARGEUR());
-        demineur.setnMines(mines);
-        demineur.setType(type);
-        demineur.setJeux(new DeminCase[demineur.getHAUTEUR()][demineur.getLARGEUR()]);
 
-//        //création des cases
-//        for (int i = 0; i < demineur.getHAUTEUR(); i++) {
-//            for (int j = 0; j < demineur.getLARGEUR(); j++) {
-//                demineur.getJeux()[i][j] = new DeminCase();
-//            }
-//        }
-//
-//        //sélection du bon mode dans le JMenu
-//        selectionnerLeNiveauDeDifficulte(type);
-//
-//        //initialisation
-//        nouveau();
-//
-//        try {
-//            //Graphisme
-//            jbInit();
-//           // this.setVisible(true);  revenir
-//            boutonNouveau.requestFocus();
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-    }
 
 
 
